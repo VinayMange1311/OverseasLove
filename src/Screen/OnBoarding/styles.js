@@ -1,0 +1,49 @@
+import { StyleSheet } from "react-native"
+
+export default StyleSheet.create({
+   main:{
+    backgroundColor:'white',
+    flex:1,
+   },
+   backGroundImage:{
+    height:400,
+    marginRight:15,
+   },
+   backGroundImageText:{
+      marginTop:34,
+      textAlign:'center',
+      color:'#FFFFFF',
+      fontSize:15,
+      fontWeight:'100',
+   },
+   simpleText:{
+      color:'#24000B',
+      textAlign:'center',
+      fontSize:17,
+      marginHorizontal:30,
+      marginTop:40,
+      fontWeight:'100',
+   },
+   signInBtn:{
+      height:64,
+      backgroundColor:'#A819FD',
+      marginHorizontal:15,
+      marginTop:37,
+      borderBottomLeftRadius:30,
+      borderTopRightRadius:30,
+   },
+   signInText:{
+      color:'#FFFFFF',
+      fontSize:17,
+      fontWeight:'600',
+      textAlign:'center',
+      paddingTop:17
+   },
+   signUpText:{
+      color:'#24000B',
+      textAlign:'center',
+      marginTop:37,
+      fontSize:15,
+      fontWeight:'100'
+   }
+})

@@ -1,0 +1,100 @@
+import {StyleSheet} from 'react-native';
+
+export default StyleSheet.create({
+  main: {
+    backgroundColor: 'white',
+    flex: 1,
+  },
+  linearGradient: {
+    flex: 1,
+    //backgroundColor:'red',
+  },
+  headerView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginHorizontal: 14,
+    marginTop: 34,
+  },
+  overseasImg: {
+    marginTop: 16,
+    width: 316,
+    height: 58,
+    alignSelf: 'center',
+  },
+  signInText: {
+    fontSize: 22,
+    fontWeight: '700',
+    color: '#FFFFFF',
+    marginLeft: 16,
+    marginTop: 34,
+  },
+  emailInput: {
+    borderColor: '#FFFFFF',
+    borderWidth: 1,
+    borderRadius: 10,
+    marginHorizontal: 16,
+    marginTop: 30,
+    fontSize: 17,
+    paddingLeft: 30,
+    fontWeight: '100',
+  },
+  passwordInput: {
+    borderColor: '#FFFFFF',
+    borderWidth: 1,
+    borderRadius: 10,
+    marginHorizontal: 16,
+    marginTop: 30,
+    fontSize: 17,
+    paddingLeft: 30,
+    fontWeight: '100',
+  },
+  forgotPassText: {
+    color: '#24000B',
+    marginTop: 10,
+    textAlign: 'right',
+    marginRight: 16,
+    fontSize: 15,
+    fontWeight: '300',
+  },
+  btnBackGrondLiner: {
+    height: 85,
+    marginHorizontal: 16,
+    marginTop: 50,
+  },
+  signInBtn: {
+    height: 65,
+    backgroundColor: '#FFFFFF',
+    marginHorizontal: 16,
+    borderBottomLeftRadius: 30,
+    borderTopRightRadius: 30,
+    marginTop: 10,
+  },
+  btntext: {
+    color: '#24000B',
+    fontSize: 17,
+    fontWeight: '600',
+    textAlign: 'center',
+    paddingTop: 22,
+  },
+  mainDivider: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 50,
+  },
+  divider: {
+    flex: 1,
+    height: 0.5,
+    backgroundColor: 'white',
+  },
+  dividerText: {
+    textAlign: 'center',
+    fontSize: 15,
+    fontWeight: '100',
+    marginHorizontal: 20,
+  },
+  socialContent: {
+    flexDirection: 'row',
+    marginTop: 40,
+    justifyContent: 'space-evenly',
+  },
+});

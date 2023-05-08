@@ -1,0 +1,10 @@
+export const trys = require("./try.jpg");
+export const annete1 = require("./annette-sousa-HW-ep3fC4Kc-unsplash.jpg");
+export const rectangleFrame = require("./Rectangle 2.png");
+export const overseas = require("./Heading.png");
+export const BtnBackGround = require("./Rectangle3.png");
+export const Instagram = require("./Instagram.png");
+export const Circle = require("./Circle.png");
+export const AddCircle = require("./AddCicle.png");
+export const camera = require("./Camera.png");
+export const Add = require("./Plus.png");
