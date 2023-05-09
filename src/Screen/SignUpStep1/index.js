@@ -64,7 +64,6 @@ const SignUpStep1 = () => {
           style={styles.dropDownContainer}
           placeholder="Gender"
           placeholderStyle={styles.placeholder}
-          selectedTextStyle={styles.selectedTextStyle}
           data={data}
           setSelected={setValue2}
           renderRightIcon={() => (
