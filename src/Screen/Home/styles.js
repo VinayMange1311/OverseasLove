@@ -44,5 +44,18 @@ export default StyleSheet.create({
     alignSelf:'center',
     marginTop:54,
 
+  },
+  name:{
+    fontWeight:'700',
+    color:'#FFFFFF',
+    fontSize:22,
+    marginLeft:19,
+    marginTop:334
+  },
+  disatnce:{
+    fontWeight:'100',
+    color:'#FFFFFF',
+    marginLeft:19,
+    fontSize:14
   }
 })

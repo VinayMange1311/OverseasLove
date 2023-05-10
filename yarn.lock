@@ -1898,6 +1898,11 @@
   dependencies:
     "@sinonjs/commons" "^2.0.0"
 
+"@stencil/core@^2.18.0":
+  "integrity" "sha512-kmVA0M/HojwsfkeHsifvHVIYe4l5tin7J5+DLgtl8h6WWfiMClND5K3ifCXXI2ETDNKiEk21p6jql3Fx9o2rng=="
+  "resolved" "https://registry.npmjs.org/@stencil/core/-/core-2.22.3.tgz"
+  "version" "2.22.3"
+
 "@tsconfig/react-native@^2.0.2":
   "integrity" "sha512-jE58snEKBd9DXfyR4+ssZmYJ/W2mOSnNrvljR0aLyQJL9JKX6vlWELHkRjb3HBbcM9Uy0hZGijXbqEAjOERW2A=="
   "resolved" "https://registry.npmjs.org/@tsconfig/react-native/-/react-native-2.0.3.tgz"
@@ -4435,6 +4440,13 @@
   "version" "2.2.4"
   dependencies:
     "loose-envify" "^1.0.0"
+
+"ionicons@^7.1.0":
+  "integrity" "sha512-iE4GuEdEHARJpp0sWL7WJZCzNCf5VxpNRhAjW0fLnZPnNL5qZOJUcfup2Z2Ty7Jk8Q5hacrHfGEB1lCwOdXqGg=="
+  "resolved" "https://registry.npmjs.org/ionicons/-/ionicons-7.1.0.tgz"
+  "version" "7.1.0"
+  dependencies:
+    "@stencil/core" "^2.18.0"
 
 "ip@^1.1.5":
   "integrity" "sha512-PuExPYUiu6qMBQb4l06ecm6T6ujzhmh+MeJcW9wa89PoAz5pvd4zPgN5WJV104mb6S2T1AwNIAaB70JNrLQWhg=="

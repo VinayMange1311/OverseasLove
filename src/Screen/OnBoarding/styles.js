@@ -6,9 +6,16 @@ export default StyleSheet.create({
     flex:1,
    },
    backGroundImage:{
-    height:400,
+    height:354,
+    width:347,
     marginRight:15,
    },
+   backGroundImageFrame:{
+      height:353,
+      width:350,
+      marginTop:10,
+      marginLeft:7
+     },
    backGroundImageText:{
       marginTop:34,
       textAlign:'center',
@@ -28,7 +35,6 @@ export default StyleSheet.create({
       height:64,
       backgroundColor:'#A819FD',
       marginHorizontal:15,
-      marginTop:37,
       borderBottomLeftRadius:30,
       borderTopRightRadius:30,
    },

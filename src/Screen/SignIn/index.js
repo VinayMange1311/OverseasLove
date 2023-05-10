@@ -34,7 +34,8 @@ const SignIn = () => {
       <TextInput
         style={styles.emailInput}
         placeholder="E-mail"
-        placeholderTextColor={'#FFFFFF'}></TextInput>
+        placeholderTextColor={'#FFFFFF'}
+        ></TextInput>
       <TextInput
         style={styles.passwordInput}
         placeholder="Password"

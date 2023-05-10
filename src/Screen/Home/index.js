@@ -23,8 +23,8 @@ const Home = () => {
         <Image source={Images.Filter} style={styles.filter}></Image>
       </View>
       <ImageBackground source={Images.photo} style={styles.photo}>
-          <Text>Kim, 26</Text>
-          <Text>20km from you</Text>
+          <Text style={styles.name}>Kim, 26</Text>
+          <Text style={styles.disatnce}>20km from you</Text>
       </ImageBackground>
     </SafeAreaView>
   );

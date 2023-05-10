@@ -14,6 +14,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import PhoneInput from 'react-phone-number-input';
 import styles from './styles';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import TabNavigation from '../../Navigation/TabNavigation';
 
 const Likes = () => {
   const data = [
