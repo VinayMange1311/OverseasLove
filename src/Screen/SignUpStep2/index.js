@@ -5,7 +5,7 @@ import {
   TextInput,
   Image,
   ImageBackground,
-  TouchableHighlight,
+  TouchableOpacity,
   Pressable,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
@@ -25,7 +25,7 @@ const SignUpStep2 = () => {
   const navigation = useNavigation();
   const [value2, setValue2] = useState([]);
   const [isActive2, setisActive2] = useState(false);
-
+  const [choice,setChoice] = useState('');
   const months = [
     {id: 1, name: 'January'},
     {id: 2, name: 'February'},
@@ -153,17 +153,16 @@ const SignUpStep2 = () => {
       <TextInput
         style={styles.userChoiceDesc}
         placeholder="What are you looking for?"
-        placeholderTextColor={'#FFFFFF'}></TextInput>
-      <ImageBackground
-        source={Images.BtnBackGround}
-        resizeMode="center"
-        style={styles.btnBackGrondLiner}>
-        <TouchableHighlight
-          style={styles.resetBtn}
-          onPress={() => navigation.navigate('VarifyNumberS1')}>
-          <Text style={styles.btntext}>Continue</Text>
-        </TouchableHighlight>
-      </ImageBackground>
+        placeholderTextColor={'#FFFFFF'}
+        onChangeText={choice => setChoice(choice)}></TextInput>
+      <View style={styles.btnBackView}>
+        <TouchableOpacity
+          activeOpacity={1}
+          style={[styles.btn,{transform: [{rotate: '4.14deg'}]}]}
+          onPress={() => navigation.navigate('Home')}>
+          <Text style={styles.btnText}>Continue</Text>
+        </TouchableOpacity>
+      </View>
       <View style={styles.mainDivider}>
         <View style={styles.divider} />
         <Text style={styles.dividerText}>or log in with</Text>
@@ -174,7 +173,7 @@ const SignUpStep2 = () => {
         <MaterialCommunityIcons name={'facebook'} size={40} color={'white'} />
         <Image
           source={Images.Instagram}
-          style={{height: 35, width: 35, marginTop: 3}}></Image>
+          style={styles.instaIcon}></Image>
         <FontAwesome name={'google-plus-circle'} size={40} color={'white'} />
       </View>
     </LinearGradient>

@@ -16,32 +16,89 @@ const chatScreen = 'Chat';
 
 const Tab = createBottomTabNavigator();
 
-const TabNavigation = () => {
+const TabNav = () =>  {
   return (
-    <NavigationContainer>
-      <Tab.Navigator
-        initialRouteName={homeName}
-        screenOptions={({route}) => ({
-          tabBarIcon: ({focused, color, size}) => {
-            let iconName;
-            let rn = route.name;
-            if (rn === homeName) {
-              iconName = focused ? 'Home' : '';
-            } else if (rn === likesScreen) {
-              iconName = focused ? 'Chat' : '';
-            } else if (rn === chatScreen) {
-              iconName = focused ? 'Homeheart' : '';
-            }
-            return <Image source={Images.iconName} />;
-          },
-        })}>
-        <Tab.Group>
-          <Tab.Screen name={homeName} component={Home} />
-          <Tab.Screen name={chatScreen} component={Chat} />
-          <Tab.Screen name={likesScreen} component={Likes} />
-        </Tab.Group>
-      </Tab.Navigator>
-    </NavigationContainer>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: {
+          borderTopLeftRadius: 30,
+          borderTopRightRadius: 30,
+          height: 86,
+          paddingBottom: 15,
+        },
+      }}
+      initialRouteName="Home"
+      tabBarOptions={{
+        activeTintColor: '#6B18FF',
+      }}>
+      <Tab.Group>
+        <Tab.Screen
+          name="Home"
+          component={Home}
+          options={{
+            tabBarLabel: 'Home',
+            tabBarLabelStyle: {
+              fontSize: 12,
+            },
+            tabBarIcon: ({focused}) =>
+              focused ? (
+                <Image source={Images.Home} style={styles.bottomChatImg} />
+              ) : (
+                <Image source={Images.Home} style={styles.bottomChatImg} />
+              ),
+          }}
+        />
+        <Tab.Screen
+          name="Chat"
+          component={Chat}
+          options={{
+            tabBarLabel: 'Chat',
+            tabBarLabelStyle: {
+              fontSize: 12,
+            },
+            tabBarIcon: ({focused}) =>
+              focused ? (
+                <Image source={Images.ChatOutline} style={styles.bottomChatImg} />
+              ) : (
+                <Image source={Images.Chat} style={styles.bottomChatImg} />
+              ),
+          }}
+        />
+        <Tab.Screen
+          component={Likes}
+          name="Likes"
+          options={{
+            tabBarLabel: 'Likes',
+            tabBarLabelStyle: {
+              fontSize: 12,
+            },
+            tabBarIcon: ({focused}) =>
+              focused ? (
+                <Image source={Images.HeartOutline} style={styles.bottomLikeImg} />
+              ) : (
+                <Image source={Images.Homeheart} style={styles.bottomLikeImg} />
+              ),
+          }}
+        />
+        <Tab.Screen
+          component={Profile}
+          name="Profile"
+          options={{
+            tabBarLabel: 'Profile',
+            tabBarLabelStyle: {
+              fontSize: 12,
+            },
+            tabBarIcon: ({focused}) =>
+              focused ? (
+                <Image source={Images.PersonOutline} style={styles.bottomPersonOutline} />
+              ) : (
+                <Image source={Images.Person} style={styles.bottomPerson} />
+              ),
+          }}
+        />
+      </Tab.Group>
+    </Tab.Navigator>
   );
-};
-export default TabNavigation;
+}
+export default TabNav;

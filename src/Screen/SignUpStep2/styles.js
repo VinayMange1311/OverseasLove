@@ -7,13 +7,15 @@ export default StyleSheet.create({
       backBtn: {
         marginLeft: 17,
         marginTop: 38,
+        flexBasis:'auto'
       },
       signUpHead: {
         color: '#FFFFFF',
         fontWeight: '700',
         fontSize: 22,
         marginTop: 31,
-        marginLeft: 114,
+        flexBasis:320,
+        textAlign:'center'
       },
       circleBackGround:{
         height:203,
@@ -88,30 +90,10 @@ export default StyleSheet.create({
         marginHorizontal:18,
         justifyContent:'space-between'
       },
-      btnBackGrondLiner: {
-        height: 85,
-        marginHorizontal: 16,
-        marginTop:30,
-      },
-      resetBtn: {
-        height: 65,
-        backgroundColor: '#FFFFFF',
-        marginHorizontal: 16,
-        borderBottomLeftRadius: 30,
-        borderTopRightRadius: 30,
-        marginTop: 10,
-      },
-      btntext: {
-        color: '#24000B',
-        fontSize: 17,
-        fontWeight: '600',
-        textAlign: 'center',
-        paddingTop: 22,
-      },
       mainDivider: {
         flexDirection: 'row',
         alignItems: 'center',
-        marginTop: 56,
+        marginTop:31,
         // position: 'absolute',
         // left: 0,
         // bottom: 0,
@@ -122,6 +104,9 @@ export default StyleSheet.create({
         height: 0.5,
         backgroundColor: 'white',
       },
+      instaIcon:{
+        height: 35, width: 35, marginTop: 3
+      },
       dividerText: {
         textAlign: 'center',
         fontSize: 15,
@@ -130,7 +115,29 @@ export default StyleSheet.create({
       },
       socialContent: {
         flexDirection: 'row',
-        marginTop: 40,
+        marginTop: 33,
         justifyContent: 'space-evenly',
       },
+      btnBackView:{
+        height: 65,
+        marginHorizontal: 14,
+        borderColor: '#FFFFFF',
+        borderWidth: 1,
+        marginTop:33,
+        borderRadius: 27,
+        transform: [{rotate: '-4.14deg'}],
+    },
+     btn:{
+      height:64,
+      backgroundColor:'#FFFFFF',
+      borderBottomLeftRadius:27,
+      borderTopRightRadius:27,
+    },
+    btnText:{
+      color:'#24000B',
+      fontSize:17,
+      fontWeight:'600',
+      textAlign:'center',
+      paddingTop:17
+    },
 });

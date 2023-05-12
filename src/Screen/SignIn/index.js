@@ -5,7 +5,7 @@ import {
   TextInput,
   Image,
   ImageBackground,
-  TouchableHighlight,
+  TouchableOpacity,
   Pressable,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
@@ -16,7 +16,10 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import * as Images from '../../Images/index';
 const SignIn = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const navigation = useNavigation();
+
   return (
     <LinearGradient
       colors={['#6B18FF', '#AF18C6', '#FF1882']}
@@ -24,36 +27,38 @@ const SignIn = () => {
       start={{x: 0, y: 0}}
       end={{x: 1.5, y: 2}}
       locations={[0, 0.3, 0.7]}>
-      <View style={styles.headerView}>
-        <Pressable onPress={() => navigation.navigate('OnBoarding')}>
-          <AntDesign name={'left'} size={18} color={'white'} />
-        </Pressable>
-      </View>
+      <Pressable
+        onPress={() => navigation.navigate('OnBoarding')}
+        style={styles.headerView}>
+        <AntDesign name={'left'} size={18} color={'white'} />
+      </Pressable>
+      <Image source={Images.HeartGroup} style={styles.heartGroup} />
       <Image source={Images.overseas} style={styles.overseasImg}></Image>
       <Text style={styles.signInText}>Sign in</Text>
       <TextInput
-        style={styles.emailInput}
+        style={styles.signInTextInput}
         placeholder="E-mail"
         placeholderTextColor={'#FFFFFF'}
-        ></TextInput>
+        onChangeText={email => setEmail(email)}></TextInput>
       <TextInput
-        style={styles.passwordInput}
+        style={styles.signInTextInput}
         placeholder="Password"
         placeholderTextColor={'#FFFFFF'}
+        onChangeText={password => setPassword(password)}
         secureTextEntry={true}></TextInput>
       <Text
         style={styles.forgotPassText}
         onPress={() => navigation.navigate('Forgotpassword')}>
         Forgot password?
       </Text>
-      <ImageBackground
-        source={Images.BtnBackGround}
-        resizeMode="center"
-        style={styles.btnBackGrondLiner}>
-        <TouchableHighlight style={styles.signInBtn} onPress={()=> navigation.navigate('SignUpStep1')}>
-          <Text style={styles.btntext}>Sign in</Text>
-        </TouchableHighlight>
-      </ImageBackground>
+      <View style={styles.btnBackView}>
+        <TouchableOpacity
+          activeOpacity={1}
+          style={[styles.btn, {transform: [{rotate: '4.14deg'}]}]}
+          onPress={() => navigation.navigate('Home')}>
+          <Text style={styles.btnText}>Sign in</Text>
+        </TouchableOpacity>
+      </View>
       <View style={styles.mainDivider}>
         <View style={styles.divider} />
         <Text style={styles.dividerText}>or log in with</Text>

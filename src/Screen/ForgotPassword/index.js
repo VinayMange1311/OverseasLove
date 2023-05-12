@@ -5,7 +5,7 @@ import {
   TextInput,
   Image,
   ImageBackground,
-  TouchableHighlight,
+  TouchableOpacity,
   Pressable,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
@@ -33,6 +33,7 @@ const Forgotpassword = () => {
           style={styles.backBtn}
         />
       </Pressable>
+      <Image source={Images.HeartGroup} style={styles.heartGroup} />
       <Image source={Images.overseas} style={styles.overseas}></Image>
       <Text style={styles.forgotPasswordText}>Forgot password?</Text>
       <Text style={styles.forgotPasswordDesc}>
@@ -43,14 +44,13 @@ const Forgotpassword = () => {
         style={styles.emailInput}
         placeholder="E-mail"
         placeholderTextColor={'#FFFFFF'}></TextInput>
-      <ImageBackground
-        source={Images.BtnBackGround}
-        resizeMode="center"
-        style={styles.btnBackGrondLiner}>
-        <TouchableHighlight style={styles.resetBtn}>
-          <Text style={styles.btntext}>Reset</Text>
-        </TouchableHighlight>
-      </ImageBackground>
+      <View style={styles.btnBackView}>
+        <TouchableOpacity
+          activeOpacity={1}
+          style={[styles.btn, {transform: [{rotate: '4.14deg'}]}]}>
+          <Text style={styles.btnText}>Reset</Text>
+        </TouchableOpacity>
+      </View>
     </LinearGradient>
   );
 };

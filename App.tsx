@@ -16,6 +16,9 @@ import Chat from './src/Screen/Chat';
 import Likes from './src/Screen/likes';
 import * as Images from './src/Images/index';
 import Profile from './src/Screen/Profile';
+import Filter from './src/Screen/Filter';
+import CandidateChat from './src/Screen/CandidateChat';
+import Setting from './src/Screen/Setting';
 
 const Tab = createBottomTabNavigator();
 const TabNav = () =>  {
@@ -117,6 +120,10 @@ const App = () => {
         <Stack.Screen name="VarifyNumberS1" component={VarifyNumberStep1} />
         <Stack.Screen name="VarifyNumberS2" component={VarifyNumberStep2} />
         <Stack.Screen name="Home" component={TabNav} />
+        <Stack.Screen name="Filter" component={Filter} />
+        <Stack.Screen name="CandidateChat" component={CandidateChat} />
+        <Stack.Screen name="Setting" component={Setting} />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );

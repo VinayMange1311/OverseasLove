@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {
   Text,
   View,
-  TextInput,
+  Pressable,
   Image,
   ImageBackground,
   SafeAreaView,
@@ -16,11 +16,14 @@ import styles from './styles';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const Profile = () => {
+  const navigation = useNavigation();
   return (
     <SafeAreaView style={styles.main}>
       <View style={styles.header}>
         <Image source={Images.Logo} style={styles.logo}></Image>
+        <Pressable onPress={()=>navigation.navigate("Setting")}>
         <AntDesign name={'setting'} color={'#24000B'} size={30} />
+        </Pressable>
       </View>
       <View style={{flexDirection: 'row'}}>
         <ImageBackground source={Images.Profile} style={styles.profile}>

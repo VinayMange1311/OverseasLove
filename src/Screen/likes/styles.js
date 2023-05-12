@@ -38,13 +38,14 @@ export default StyleSheet.create({
   },
   btnContainer:{
     flexDirection:'row',
+    justifyContent:'space-around'
   },
   passImg:{
-    height:34,
-    width:34,
+    height:45,
+    width:45,
   },
   likeImg:{
-    height:34,
-    width:34,
+    height:45,
+    width:45,
   }
 });

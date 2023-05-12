@@ -4,8 +4,8 @@ import {
   Image,
   SafeAreaView,
   TouchableOpacity,
-  TouchableHighlight,
-  View
+  TouchableNativeFeedback,
+  View,
 } from 'react-native';
 import {ImageBackground} from 'react-native';
 import styles from './styles';
@@ -18,7 +18,7 @@ const OnBoarding = () => {
     <SafeAreaView style={styles.main}>
       <ImageBackground source={Images.annete1} style={styles.backGroundImage}>
         <ImageBackground
-          source={Images.rectangleFrame}
+          source={Images.MainFrame}
           style={styles.backGroundImageFrame}>
           <Text style={styles.backGroundImageText}>Find your love now!</Text>
         </ImageBackground>
@@ -27,16 +27,19 @@ const OnBoarding = () => {
         Our mission is to help people find love. Match the best variants for
         you!
       </Text>
-      <View style={{height:65,marginHorizontal:14,borderWidth:1,marginTop:40,transform:[{ rotate:'-4.14deg'}]}}>
-      <TouchableOpacity
-        style={[styles.signInBtn,{transform:[{ rotate:'4.14deg'}],}]}
-        onPress={() => navigation.navigate('SignIn')}>
-        <Text style={styles.signInText}>Sign in</Text>
-      </TouchableOpacity>
+      <View style={styles.btnBackView}>
+        <TouchableOpacity
+          activeOpacity={0.9}
+          style={[styles.btn,{transform: [{rotate: '4.14deg'}]}]}
+          onPress={() => navigation.navigate('SignIn')}>
+          <Text style={styles.btnText}>Sign in</Text>
+        </TouchableOpacity>
       </View>
-      <Text style={styles.signUpText}>
+      <Text
+        style={styles.signUpText}
+        onPress={() => navigation.navigate('SignUpStep1')}>
         Dont`t have an Account?
-        <Text style={{color: 'rgba(107, 24, 255, 1)'}}> Sign up</Text>
+        <Text style={styles.signUpTextColor}> Sign up</Text>
       </Text>
     </SafeAreaView>
   );

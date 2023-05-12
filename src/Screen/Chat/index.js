@@ -4,7 +4,7 @@ import {
   View,
   TextInput,
   Image,
-  ImageBackground,
+  Pressable,
   SafeAreaView,
   FlatList,
 } from 'react-native';
@@ -16,6 +16,7 @@ import styles from './styles';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const Chat = () => {
+  const navigation = useNavigation();
   const contacts = [
     {
       id: 1,
@@ -61,8 +62,10 @@ const Chat = () => {
       <View style={styles.chatMainView}>
         <Image source={item.image} style={styles.contactsImage}></Image>
         <View>
-          <Text style={styles.names}>{item.name}</Text>
-          <Text style={styles.desc}>{item.desc}</Text>
+          <Pressable onPress={() => navigation.navigate('CandidateChat')}>
+            <Text style={styles.names}>{item.name}</Text>
+            <Text style={styles.desc}>{item.desc}</Text>
+          </Pressable>
         </View>
       </View>
     );

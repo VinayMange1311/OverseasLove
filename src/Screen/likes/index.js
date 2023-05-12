@@ -14,7 +14,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import PhoneInput from 'react-phone-number-input';
 import styles from './styles';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import TabNavigation from '../../Navigation/TabNavigation';
+
 
 const Likes = () => {
   const data = [
@@ -42,8 +42,8 @@ const Likes = () => {
           <Image source={Images.Likeframe} style={styles.imageframe}></Image>
         </ImageBackground>
         <View style={styles.btnContainer}>
-          <Image source={Images.Pass} style={styles.passImg}></Image>
-          <Image source={Images.Like} style={styles.likeImg}></Image>
+          <Image source={Images.passBtn} style={styles.passImg}></Image>
+          <Image source={Images.likeBtn} style={styles.likeImg}></Image>
         </View>
       </View>
     );
