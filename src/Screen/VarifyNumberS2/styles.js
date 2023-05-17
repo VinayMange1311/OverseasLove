@@ -54,30 +54,32 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
   },
-  btnBackGrondLiner: {
-    height: 85,
-    marginHorizontal: 16,
-    marginTop:20,
-  },
-  resetBtn: {
-    height: 65,
-    backgroundColor: '#FFFFFF',
-    marginHorizontal: 16,
-    borderBottomLeftRadius: 30,
-    borderTopRightRadius: 30,
-    marginTop: 10,
-  },
-  btntext: {
-    color: '#24000B',
-    fontSize: 17,
-    fontWeight: '600',
-    textAlign: 'center',
-    paddingTop: 22,
-  },
   resendCode:{
     marginTop:13,
     color:"#24000B",
     textAlign:'right',
     marginRight:15
-  }
+  },
+  btnBackView: {
+    height: 65,
+    marginHorizontal: 16,
+    borderColor: '#FFFFFF',
+    borderWidth: 1,
+    marginTop: 33,
+    borderRadius: 27,
+    transform: [{rotate: '-4.14deg'}],
+  },
+  btn: {
+    height: 64,
+    backgroundColor: '#FFFFFF',
+    borderBottomLeftRadius: 27,
+    borderTopRightRadius: 27,
+  },
+  btnText: {
+    color: '#24000B',
+    fontSize: 17,
+    fontWeight: '600',
+    textAlign: 'center',
+    paddingTop: 17,
+  },
 });

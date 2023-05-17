@@ -10,15 +10,15 @@ import {
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import * as Images from '../../Images/index';
-import LinearGradient from 'react-native-linear-gradient';
-import PhoneInput from 'react-phone-number-input';
 import styles from './styles';
 import Feather from 'react-native-vector-icons/Feather';
+
 import {Dropdown} from 'react-native-element-dropdown';
 const Setting = () => {
   const navigation = useNavigation();
   const [value2, setValue2] = useState([]);
   const [isActive2, setisActive2] = useState(false);
+
   const data = [
     {label: 'Male', value: '1'},
     {label: 'Female', value: '2'},
@@ -32,34 +32,36 @@ const Setting = () => {
           <Image source={Images.backFillBtn} style={styles.backBtn}></Image>
         </Pressable>
       </View>
-      <View style={{flexDirection: 'row'}}>
+      <View style={{flexDirection: 'row',marginHorizontal:15,justifyContent:'space-evenly'}}>
         <ImageBackground
           source={Images.mainImg}
-          style={{height: 215, width: 215, marginTop: 33, marginLeft: 15}}>
+          style={styles.mainImg}>
           <Image
             source={Images.mainImgFrame}
-            style={{height: 200, width: 200, marginTop: 8, marginLeft: 10}}
+            style={styles.mainImgFrame}
           />
         </ImageBackground>
-        <View style={{marginTop: 33}}>
+        <View style={{marginTop: 35}}>
           <Image
             source={Images.reactangle27}
-            style={{height: 110, width: 110}}></Image>
+            style={styles.selectedImg}></Image>
           <Image
-            source={Images.reactangle27}
-            style={{height: 110, width: 110}}></Image>
+            source={Images.reactangle26}
+            style={styles.selectedImg}></Image>
         </View>
       </View>
-      <View style={{flexDirection: 'row'}}>
+      <View style={styles.imageView}>
         <Image
-          source={Images.reactangle27}
-          style={{height: 110, width: 110}}></Image>
+          source={Images.reactangle23}
+          style={styles.selectedImg}></Image>
         <Image
-          source={Images.reactangle27}
-          style={{height: 110, width: 110}}></Image>
-        <Image
-          source={Images.reactangle27}
-          style={{height: 110, width: 110}}></Image>
+          source={Images.reactangle24}
+          style={styles.selectedImg}></Image>
+        <ImageBackground
+          source={Images.reactangle25}
+          style={styles.selectedImg}>
+            <Image source={Images.cameraAdd} style={styles.cameraIcon}/>
+          </ImageBackground>
       </View>
       <Text style={styles.title}>David, 29</Text>
       <Text style={styles.userDesc}>man, LA</Text>
@@ -68,6 +70,7 @@ const Setting = () => {
       <Dropdown
         style={styles.dropDownContainer}
         placeholder="Smoking"
+        itemTextStyle={{color:'black'}}
         placeholderStyle={styles.placeholder}
         data={data}
         setSelected={setValue2}
@@ -91,6 +94,7 @@ const Setting = () => {
       <Dropdown
         style={styles.dropDownContainer}
         placeholder="Orientation"
+        itemTextStyle={{color:'black'}}
         placeholderStyle={styles.placeholder}
         data={data}
         setSelected={setValue2}
@@ -114,6 +118,7 @@ const Setting = () => {
       <Dropdown
         style={styles.dropDownContainer}
         placeholder="Cildren"
+        itemTextStyle={{color:'black'}}
         placeholderStyle={styles.placeholder}
         data={data}
         setSelected={setValue2}
@@ -137,6 +142,7 @@ const Setting = () => {
       <Dropdown
         style={styles.dropDownContainer}
         placeholder="Intentions"
+        itemTextStyle={{color:'black'}}
         placeholderStyle={styles.placeholder}
         data={data}
         setSelected={setValue2}
@@ -160,6 +166,7 @@ const Setting = () => {
       <Dropdown
         style={styles.dropDownContainer}
         placeholder="Family status"
+        itemTextStyle={{color:'black'}}
         placeholderStyle={styles.placeholder}
         data={data}
         setSelected={setValue2}
@@ -183,6 +190,7 @@ const Setting = () => {
       <Dropdown
         style={styles.dropDownContainer}
         placeholder="Attitude to alcohol"
+        itemTextStyle={{color:'black'}}
         placeholderStyle={styles.placeholder}
         data={data}
         setSelected={setValue2}
@@ -206,6 +214,7 @@ const Setting = () => {
       <Dropdown
         style={styles.dropDownContainer}
         placeholder="Religion"
+        itemTextStyle={{color:'black'}}
         placeholderStyle={styles.placeholder}
         data={data}
         setSelected={setValue2}
@@ -231,7 +240,6 @@ const Setting = () => {
         style={styles.hobbies}
         placeholder="Your hobby..."
         placeholderTextColor={'#24000B'}>
-        {' '}
       </TextInput>
       <View style={{flexDirection: 'row'}}>
         <Text style={styles.hobbyDesign}>Drawing</Text>

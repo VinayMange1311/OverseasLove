@@ -85,6 +85,7 @@ export default StyleSheet.create({
     width: 150,
     fontSize: 16,
     marginTop:33,
+    paddingLeft:15
   },
   placeholder: {
     fontSize: 17,

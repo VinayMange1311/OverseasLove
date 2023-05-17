@@ -10,46 +10,53 @@ import {
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import * as Images from '../../Images/index';
-import {Picker} from '@react-native-picker/picker';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Feather from 'react-native-vector-icons/Feather';
 import LinearGradient from 'react-native-linear-gradient';
-import DatePicker from 'react-native-date-picker';
 import styles from './styles';
 import ImagePicker from 'react-native-image-picker';
 import {Dropdown} from 'react-native-element-dropdown';
 
 const SignUpStep2 = () => {
   const navigation = useNavigation();
+  const [value1, setValue1] = useState([]);
+  const [isActive1, setisActive1] = useState(false);
+
   const [value2, setValue2] = useState([]);
   const [isActive2, setisActive2] = useState(false);
-  const [choice,setChoice] = useState('');
+
+  const [value3, setValue3] = useState([]);
+  const [isActive3, setisActive3] = useState(false);
+
+  const [choice, setChoice] = useState('');
+
   const months = [
-    {id: 1, name: 'January'},
-    {id: 2, name: 'February'},
-    {id: 3, name: 'March'},
-    {id: 4, name: 'April'},
-    {id: 5, name: 'May'},
-    {id: 6, name: 'June'},
-    {id: 7, name: 'July'},
-    {id: 8, name: 'August'},
-    {id: 9, name: 'September'},
-    {id: 10, name: 'October'},
-    {id: 11, name: 'November'},
-    {id: 12, name: 'December'},
+    {value: 1, label: 'January'},
+    {value: 2, label: 'February'},
+    {value: 3, label: 'March'},
+    {value: 4, label: 'April'},
+    {value: 5, label: 'May'},
+    {value: 6, label: 'June'},
+    {value: 7, label: 'July'},
+    {value: 8, label: 'August'},
+    {value: 9, label: 'September'},
+    {value: 10, label: 'October'},
+    {value: 11, label: 'November'},
+    {value: 12, label: 'December'},
   ];
   const days = Array.from({length: 31}, (_, i) => ({
-    id: i + 1,
-    name: `${i + 1}`,
+    value: i + 1,
+    label: `${i + 1}`,
   }));
 
   const years = Array.from({length: 100}, (_, i) => ({
-    id: i + 1,
-    name: `${i + 1980}`,
+    value: i + 1,
+    label: `${i + 2000}`,
   }));
-  console.log(years);
+  // console.log(years);
+
   return (
     <LinearGradient
       colors={['#6B18FF', '#AF18C6', '#FF1882']}
@@ -79,34 +86,34 @@ const SignUpStep2 = () => {
       <View style={styles.dropDownView}>
         <Dropdown
           style={styles.dayDropDownContainer}
-          placeholder="Days"
+          placeholder="days"
+          itemTextStyle={{color: 'black'}}
           placeholderStyle={styles.placeholder}
-          // selectedTextStyle={styles.selectedTextStyle}
           data={days}
-          setSelected={setValue2}
+          setSelected={setValue1}
           renderRightIcon={() => (
             <Feather
               color={'#FFFFFF'}
               size={26}
               style={{marginRight: 5}}
-              name={isActive2 ? 'chevron-up' : 'chevron-down'}
+              name={isActive1 ? 'chevron-up' : 'chevron-down'}
             />
           )}
           labelField="label"
           valueField="value"
-          value={value2}
+          value={value1}
           onChange={item => {
-            setValue2(item.value);
+            setValue1(item.value);
           }}
-          onFocus={() => setisActive2(true)}
-          onBlur={() => setisActive2(false)}
+          onFocus={() => setisActive1(true)}
+          onBlur={() => setisActive1(false)}
         />
         <Dropdown
           style={styles.monthDropDownContainer}
           placeholder="months"
-          placeholderStyle={styles.placeholder}
-          // selectedTextStyle={styles.selectedTextStyle}
+          itemTextStyle={{color: 'black'}}
           data={months}
+          autoScroll={false}
           setSelected={setValue2}
           renderRightIcon={() => (
             <Feather
@@ -125,29 +132,30 @@ const SignUpStep2 = () => {
           onFocus={() => setisActive2(true)}
           onBlur={() => setisActive2(false)}
         />
+
         <Dropdown
           style={styles.yearDropDownContainer}
-          placeholder="Days"
+          placeholder="Years"
+          itemTextStyle={{color: 'black'}}
           placeholderStyle={styles.placeholder}
-          // selectedTextStyle={styles.selectedTextStyle}
           data={years}
-          setSelected={setValue2}
+          setSelected={setValue3}
           renderRightIcon={() => (
             <Feather
               color={'#FFFFFF'}
               size={26}
               style={{marginRight: 5}}
-              name={isActive2 ? 'chevron-up' : 'chevron-down'}
+              name={isActive3 ? 'chevron-up' : 'chevron-down'}
             />
           )}
           labelField="label"
           valueField="value"
-          value={value2}
+          value={value3}
           onChange={item => {
-            setValue2(item.value);
+            setValue3(item.value);
           }}
-          onFocus={() => setisActive2(true)}
-          onBlur={() => setisActive2(false)}
+          onFocus={() => setisActive3(true)}
+          onBlur={() => setisActive3(false)}
         />
       </View>
       <TextInput
@@ -158,8 +166,8 @@ const SignUpStep2 = () => {
       <View style={styles.btnBackView}>
         <TouchableOpacity
           activeOpacity={1}
-          style={[styles.btn,{transform: [{rotate: '4.14deg'}]}]}
-          onPress={() => navigation.navigate('Home')}>
+          style={[styles.btn, {transform: [{rotate: '4.14deg'}]}]}
+          onPress={() => navigation.navigate('VarifyNumberS1')}>
           <Text style={styles.btnText}>Continue</Text>
         </TouchableOpacity>
       </View>
@@ -171,9 +179,7 @@ const SignUpStep2 = () => {
       <View style={styles.socialContent}>
         <AntDesign name={'apple1'} size={40} color={'white'} />
         <MaterialCommunityIcons name={'facebook'} size={40} color={'white'} />
-        <Image
-          source={Images.Instagram}
-          style={styles.instaIcon}></Image>
+        <Image source={Images.Instagram} style={styles.instaIcon}></Image>
         <FontAwesome name={'google-plus-circle'} size={40} color={'white'} />
       </View>
     </LinearGradient>

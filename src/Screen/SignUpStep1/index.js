@@ -72,6 +72,7 @@ const SignUpStep1 = () => {
             style={styles.dropDownContainer}
             placeholder="Gender"
             placeholderStyle={styles.placeholder}
+            itemTextStyle={{color:'black'}}
             data={data}
             setSelected={setValue2}
             renderRightIcon={() => (
@@ -94,6 +95,7 @@ const SignUpStep1 = () => {
           <Dropdown
             style={styles.dropDownContainer}
             placeholder="Location"
+            itemTextStyle={{color:'black',}}
             placeholderStyle={styles.placeholder}
             data={data}
             setSelected={setValue2}

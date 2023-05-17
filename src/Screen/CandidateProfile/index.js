@@ -13,8 +13,6 @@ import * as Images from '../../Images/index';
 import LinearGradient from 'react-native-linear-gradient';
 import PhoneInput from 'react-phone-number-input';
 import styles from './styles';
-import AntDesign from 'react-native-vector-icons/AntDesign';
-import {defaultConfig} from 'antd/es/theme/internal';
 
 const CandidateProfile = () => {
   return (

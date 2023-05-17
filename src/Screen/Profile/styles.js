@@ -69,27 +69,28 @@ export default StyleSheet.create({
     color:'#000000',
     marginHorizontal:21
   },
-  btnBackGrondLiner: {
-    height: 85,
-    marginHorizontal: 16,
-    marginTop: 50,
-    borderColor:'#A819FD',
-  },
-  signInBtn: {
+  btnBackView:{
     height: 65,
-    backgroundColor: '#A819FD',
-    marginHorizontal: 16,
-    borderBottomLeftRadius: 30,
-    borderTopRightRadius: 30,
-    marginTop: 10,
-  },
-  btntext: {
-    color: '#FFFFFF',
-    fontSize: 17,
-    fontWeight: '600',
-    textAlign: 'center',
-    paddingTop: 22,
-  },
+    marginHorizontal: 14,
+    borderColor: '#A819FD',
+    borderWidth: 1,
+    marginTop: 22,
+    borderRadius: 27,
+    transform: [{rotate: '-4.14deg'}],
+},
+ btn:{
+  height:64,
+  backgroundColor:'#A819FD',
+  borderBottomLeftRadius:27,
+  borderTopRightRadius:27,
+},
+btnText:{
+  color:'#FFFFFF',
+  fontSize:17,
+  fontWeight:'600',
+  textAlign:'center',
+  paddingTop:17
+},
   shareIcon:{
     height:50,
     width:50,

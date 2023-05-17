@@ -18,8 +18,17 @@ import * as Images from '../../Images/index';
 const SignIn = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState(null);
   const navigation = useNavigation();
 
+  const signInpress = ()=>{
+
+  if (email==="Vinay" && password==="1234") {
+    navigation.navigate("Home");
+  } else {
+    alert("username and password not matched")
+  }
+}
   return (
     <LinearGradient
       colors={['#6B18FF', '#AF18C6', '#FF1882']}
@@ -40,6 +49,7 @@ const SignIn = () => {
         placeholder="E-mail"
         placeholderTextColor={'#FFFFFF'}
         onChangeText={email => setEmail(email)}></TextInput>
+        
       <TextInput
         style={styles.signInTextInput}
         placeholder="Password"
@@ -55,7 +65,7 @@ const SignIn = () => {
         <TouchableOpacity
           activeOpacity={1}
           style={[styles.btn, {transform: [{rotate: '4.14deg'}]}]}
-          onPress={() => navigation.navigate('Home')}>
+          onPress={() => signInpress()}>
           <Text style={styles.btnText}>Sign in</Text>
         </TouchableOpacity>
       </View>

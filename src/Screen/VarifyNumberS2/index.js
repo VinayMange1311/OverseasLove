@@ -5,7 +5,7 @@ import {
   TextInput,
   Image,
   ImageBackground,
-  TouchableHighlight,
+  TouchableOpacity,
   Pressable,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
@@ -56,16 +56,14 @@ const VarifyNumberStep2 = () => {
           maxLength={1}
           keyboardType={'numeric'}></TextInput>
       </View>
-      <ImageBackground
-        source={Images.BtnBackGround}
-        resizeMode="center"
-        style={styles.btnBackGrondLiner}>
-        <TouchableHighlight
-          style={styles.resetBtn}
+      <View style={styles.btnBackView}>
+        <TouchableOpacity
+          activeOpacity={1}
+          style={[styles.btn, {transform: [{rotate: '4.14deg'}]}]}
           onPress={() => navigation.navigate('Home')}>
-          <Text style={styles.btntext}>Verify</Text>
-        </TouchableHighlight>
-      </ImageBackground>
+          <Text style={styles.btnText}>Verify</Text>
+        </TouchableOpacity>
+      </View>
       <Text style={styles.resendCode}>Resend code</Text>
     </LinearGradient>
   );

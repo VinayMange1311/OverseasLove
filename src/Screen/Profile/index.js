@@ -6,7 +6,7 @@ import {
   Image,
   ImageBackground,
   SafeAreaView,
-  TouchableHighlight,
+  TouchableOpacity,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import * as Images from '../../Images/index';
@@ -44,15 +44,13 @@ const Profile = () => {
         Upgrade to <Text style={{color: '#6B18FF'}}>PREMIUM</Text> account and
         send as much messages as you want
       </Text>
-      <ImageBackground
-        source={Images.BtnBackGround}
-        resizeMode="center"
-        style={styles.btnBackGrondLiner}>
-        <TouchableHighlight
-          style={styles.signInBtn}>
-          <Text style={styles.btntext}>Sign in</Text>
-        </TouchableHighlight>
-      </ImageBackground>
+      <View style={styles.btnBackView}>
+        <TouchableOpacity
+          activeOpacity={1}
+          style={[styles.btn, {transform: [{rotate: '4.14deg'}]}]}>
+          <Text style={styles.btnText}>Upgrade</Text>
+        </TouchableOpacity>
+      </View>
       <View style={styles.shareView}>
         <Image source={Images.Share} style={styles.shareIcon}></Image>
         <Text style={styles.shareDesc}>
