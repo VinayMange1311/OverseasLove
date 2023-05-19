@@ -14,15 +14,17 @@ import {Dropdown} from 'react-native-element-dropdown';
 import Feather from 'react-native-vector-icons/Feather';
 import {useNavigation} from '@react-navigation/native';
 import TabNav from '../../Navigation/TabNavigation';
-import RangeSlider from '../../Custom/RangeSlider/RangeSlider';
+import RangeSlider, { Slider } from 'react-native-range-slider-expo';
 
 const Filter = () => {
+  
   const navigation = useNavigation();
   const onSelectSwitch = index => {};
   const [value2, setValue2] = useState([]);
   const [isActive2, setisActive2] = useState(false);
   const [minValue, setMinValue] = useState(0);
   const [maxValue, setMaxValue] = useState(100);
+  const [range,setRange] = useState();
 
   const data = [
     {label: 'Male', value: '1'},
@@ -63,6 +65,13 @@ const Filter = () => {
             {minValue}-{maxValue}
           </Text>
         </View>
+        <View>
+        <RangeSlider
+        low={10}
+        max={1000}
+       />
+        </View>
+      
         <Dropdown
           style={styles.dropDownContainer}
           placeholder="Location"
