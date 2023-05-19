@@ -22,7 +22,6 @@ export default StyleSheet.create({
     width: 203,
     alignSelf: 'center',
     marginTop: 30,
-    borderRadius:200, 
     backgroundColor:'white' 
   },
   cameraIcon: {

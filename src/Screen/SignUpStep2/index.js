@@ -69,7 +69,6 @@ const SignUpStep2 = () => {
     label: `${i + 2000}`,
   }));
   // console.log(years);
-
   return (
     <LinearGradient
       colors={['#6B18FF', '#AF18C6', '#FF1882']}
@@ -88,19 +87,11 @@ const SignUpStep2 = () => {
         </Pressable>
         <Text style={styles.signUpHead}>Sign up</Text>
       </View>
-      <View style={{borderRadius: 200}}>
-        <Image
-          source={image ? {uri: image} : Images.cameraBackground}
-          style={styles.circleBackGround}>
-        </Image>
         <Pressable onPress={selectImage}>
-          <Image source={Images.AddCircle} style={styles.addIcon}>
-            {/* <ImageBackground
-              source={Images.Add}
-              style={styles.plusIcon}></ImageBackground> */}
-          </Image>
+          <Image
+            source={image ? {uri: image} : Images.Group10}
+            style={styles.circleBackGround}></Image>
         </Pressable>
-      </View>
       <View style={styles.dropDownView}>
         <Dropdown
           style={styles.dayDropDownContainer}

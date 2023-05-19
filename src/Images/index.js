@@ -56,3 +56,4 @@ export const Backbtn2X = require("./2xBackBtn.png");
 export const Translationicon = require("./TranslationIcon.png");
 export const cameraBackground = require("./camerabackGroundCircle.png");
 export const unFillHome = require("./HomeIconunfill.png");
+export const Group10 = require("./Group10.png");

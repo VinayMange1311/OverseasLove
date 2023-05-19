@@ -10,7 +10,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@material/slider": "^14.0.0",
     "@miblanchard/react-native-slider": "^2.3.1",
+    "@mui/material": "^5.13.1",
     "@ptomasroos/react-native-multi-slider": "^2.2.2",
     "@react-native-community/masked-view": "^0.1.11",
     "@react-native-community/slider": "^4.4.2",
@@ -25,6 +29,7 @@
     "ionicons": "^7.1.0",
     "linear-gradient-text": "^1.0.3",
     "material-ui-community-icons": "^0.15.0",
+    "multi-range-slider-react": "^2.0.3",
     "react": "18.2.0",
     "react-datepicker": "^4.11.0",
     "react-flags-select": "^2.2.3",
