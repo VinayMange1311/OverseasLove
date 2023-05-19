@@ -16,10 +16,11 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Feather from 'react-native-vector-icons/Feather';
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
-import ImagePicker from 'react-native-image-picker';
 import {Dropdown} from 'react-native-element-dropdown';
+import ImagePicker from 'react-native-image-crop-picker';
 
 const SignUpStep2 = () => {
+  const ImagePicker = require('react-native-image-crop-picker');
   const navigation = useNavigation();
   const [value1, setValue1] = useState([]);
   const [isActive1, setisActive1] = useState(false);
@@ -31,6 +32,18 @@ const SignUpStep2 = () => {
   const [isActive3, setisActive3] = useState(false);
 
   const [choice, setChoice] = useState('');
+  const [image, setImage] = useState(null);
+
+  const selectImage = () => {
+    ImagePicker.openPicker({
+      cropping: true,
+      mediaType: 'photo',
+      cropperCircleOverlay: true,
+    }).then(image => {
+      console.log(image);
+      setImage(image.path);
+    });
+  };
 
   const months = [
     {value: 1, label: 'January'},
@@ -75,14 +88,19 @@ const SignUpStep2 = () => {
         </Pressable>
         <Text style={styles.signUpHead}>Sign up</Text>
       </View>
-      <ImageBackground source={Images.Circle} style={styles.circleBackGround}>
-        <Image source={Images.camera} style={styles.cameraIcon}></Image>
-        <ImageBackground source={Images.AddCircle} style={styles.addIcon}>
-          <ImageBackground
-            source={Images.Add}
-            style={styles.plusIcon}></ImageBackground>
-        </ImageBackground>
-      </ImageBackground>
+      <View style={{borderRadius: 200}}>
+        <Image
+          source={image ? {uri: image} : Images.cameraBackground}
+          style={styles.circleBackGround}>
+        </Image>
+        <Pressable onPress={selectImage}>
+          <Image source={Images.AddCircle} style={styles.addIcon}>
+            {/* <ImageBackground
+              source={Images.Add}
+              style={styles.plusIcon}></ImageBackground> */}
+          </Image>
+        </Pressable>
+      </View>
       <View style={styles.dropDownView}>
         <Dropdown
           style={styles.dayDropDownContainer}

@@ -10,8 +10,8 @@ export default StyleSheet.create({
     width: 152,
   },
   backBtn: {
-    height: 15,
-    width: 15,
+    height: 18,
+    width: 12,
   },
   mainImg: {
     height: 215,

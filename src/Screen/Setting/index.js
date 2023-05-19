@@ -14,6 +14,7 @@ import styles from './styles';
 import Feather from 'react-native-vector-icons/Feather';
 
 import {Dropdown} from 'react-native-element-dropdown';
+
 const Setting = () => {
   const navigation = useNavigation();
   const [value2, setValue2] = useState([]);
@@ -29,7 +30,7 @@ const Setting = () => {
       <View style={styles.headerView}>
         <Image source={Images.Logo} style={styles.logo}></Image>
         <Pressable onPress={() => navigation.navigate('Home')}>
-          <Image source={Images.backFillBtn} style={styles.backBtn}></Image>
+        <Image source={Images.Backbtn2X} style={styles.backBtn}></Image>
         </Pressable>
       </View>
       <View style={{flexDirection: 'row',marginHorizontal:15,justifyContent:'space-evenly'}}>

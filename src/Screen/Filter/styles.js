@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-
+import LinearGradient from 'react-native-linear-gradient';
 export default StyleSheet.create({
   main: {
     flex: 1,
@@ -11,8 +11,9 @@ export default StyleSheet.create({
     width:152
   },
   backBtn:{
-    height:15,
-    width:15,
+    height:18,
+    width:12,
+    marginTop:6
   },
   headerView:{
     flexDirection:'row',
@@ -39,7 +40,9 @@ export default StyleSheet.create({
     height:57,
     marginHorizontal:15,
     borderRadius:10,
-    marginTop:30
+    marginTop:30,
+    backgroundColor:'#F5F5F5',
+    color:'#24000B',
   },
   placeholder: {
     fontSize: 17,

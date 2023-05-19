@@ -37,11 +37,13 @@ export default StyleSheet.create({
     fontWeight: '700',
     marginLeft: 11,
   },
-  translationIcon:{
-    height: 25, width: 25, marginRight: 26
+  translationIcon: {
+    height: 25,
+    width: 25,
+    marginRight: 26,
   },
-  callIcon:{
-    marginRight: 26
+  callIcon: {
+    marginRight: 26,
   },
   chatInput: {
     borderColor: 'black',
@@ -49,40 +51,51 @@ export default StyleSheet.create({
     borderRadius: 13,
     marginBottom: 30,
     backgroundColor: 'white',
-    color:'black',
-    flexDirection:'row',
-    justifyContent:'space-between',
-    alignItems:'center'
+    color: 'black',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   hobbyDesign: {
-   color:'white',
-   marginLeft:20,
-   fontSize:16,
-   fontWeight:"bold",
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+    paddingHorizontal:10,
+    paddingVertical:10
   },
-  camerabackGround:{
-    height: 30, width: 30, marginLeft: 17
+  camerabackGround: {
+    height: 30,
+    width: 30,
+    marginLeft: 17,
   },
-  cameraIcon:{
+  cameraIcon: {
     height: 20,
     width: 20,
     marginLeft: 5,
     marginTop: 5,
   },
-  textInput:{
-    width: 270, marginLeft: 17
+  textInput: {
+    width: 270,
+    marginLeft: 17,
+    color: 'black',
   },
-  smileyIcon:{
-    marginRight:16
+  smileyIcon: {
+    marginRight: 16,
   },
-  gradientTextView:{
-    paddingLeft: 10, height: 40, marginTop: 20, width: 200,borderRadius:18,marginLeft:15
+  gradientTextView: {
+    paddingLeft: 10,
+    marginTop: 20,
+    borderRadius: 18,
+    marginLeft: 15,
+    width:180,
+    maxWidth:400,
+    minWidth:100,
   },
-  youLiked:{
-    marginTop:30,
-    textAlign:'center',
-    color:'#24000B',
-    fontWeight:'100',
-    fontSize:17,
+  youLiked: {
+    marginTop: 30,
+    textAlign: 'center',
+    color: '#24000B',
+    fontWeight: '100',
+    fontSize: 17,
   },
 });

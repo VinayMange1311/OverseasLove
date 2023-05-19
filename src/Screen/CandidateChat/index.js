@@ -12,9 +12,7 @@ import {
 import {useNavigation} from '@react-navigation/native';
 import * as Images from '../../Images/index';
 import LinearGradient from 'react-native-linear-gradient';
-import PhoneInput from 'react-phone-number-input';
 import styles from './styles';
-import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -59,24 +57,22 @@ const CandidateChat = () => {
         <Text style={styles.youLiked}>You liked Anna 5 days ago</Text>
         {tasks.map((task, index) => {
           return (
-            <LinearGradient
-              colors={['#6B18FF', '#AF18C6', '#FF1882']}
-              style={styles.gradientTextView}
-              start={{x: 0, y: 0}}
-              end={{x: 1.5, y: 2}}
-              locations={[0, 0.3, 0.7]}>
-              <Text style={styles.hobbyDesign}>{task}</Text>
-            </LinearGradient>
+            <View>
+              <LinearGradient
+                colors={['#6B18FF', '#AF18C6', '#FF1882']}
+                style={styles.gradientTextView}
+                start={{x: 0, y: 0}}
+                end={{x: 1.5, y: 2}}
+                locations={[0, 0.3, 0.7]}>
+                <Text style={styles.hobbyDesign}>{task}</Text>
+              </LinearGradient>
+            </View>
           );
         })}
       </ScrollView>
       <View style={styles.chatInput}>
-        <ImageBackground
-          source={Images.Circle}
-          style={styles.camerabackGround}>
-          <Image
-            source={Images.camera}
-            style={styles.cameraIcon}></Image>
+        <ImageBackground source={Images.Circle} style={styles.camerabackGround}>
+          <Image source={Images.camera} style={styles.cameraIcon}></Image>
         </ImageBackground>
         <TextInput
           style={styles.textInput}

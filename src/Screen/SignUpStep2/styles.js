@@ -22,6 +22,8 @@ export default StyleSheet.create({
     width: 203,
     alignSelf: 'center',
     marginTop: 30,
+    borderRadius:200, 
+    backgroundColor:'white' 
   },
   cameraIcon: {
     width: 124,
@@ -32,7 +34,7 @@ export default StyleSheet.create({
   addIcon: {
     height: 46,
     width: 46,
-    marginLeft: 140,
+    marginLeft:160,
   },
   plusIcon: {
     width: 13,
@@ -60,7 +62,7 @@ export default StyleSheet.create({
     width: 84,
     fontSize: 16,
     marginTop: 20,
-    paddingLeft:15
+    paddingLeft:1
   },
   monthDropDownContainer: {
     borderRadius: 10,
@@ -80,7 +82,7 @@ export default StyleSheet.create({
     width: 94,
     fontSize: 16,
     marginTop: 20,
-    paddingLeft:15
+    paddingLeft:4
   },
   placeholder: {
     fontSize: 17,
