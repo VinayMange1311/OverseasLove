@@ -1,8 +1,9 @@
 import { StyleSheet } from "react-native"
+import { Colors } from "../../Constant/color"
 
 export default StyleSheet.create({
    main:{
-    backgroundColor:'white',
+    backgroundColor:Colors.White,
     flex:1,
    },
    backGroundImage:{
@@ -19,12 +20,12 @@ export default StyleSheet.create({
    backGroundImageText:{
       marginTop:24,
       textAlign:'center',
-      color:'#FFFFFF',
+      color:Colors.White,
       fontSize:15,
       fontWeight:'100',
    },
    simpleText:{
-      color:'#24000B',
+      color:Colors.BellaDona,
       textAlign:'center',
       fontSize:17,
       marginHorizontal:30,
@@ -33,31 +34,31 @@ export default StyleSheet.create({
    },
    btn:{
       height:64,
-      backgroundColor:'#A819FD',
+      backgroundColor:Colors.lightPurple,
       borderBottomLeftRadius:27,
       borderTopRightRadius:27,
    },
    btnText:{
-      color:'#FFFFFF',
+      color:Colors.White,
       fontSize:17,
       fontWeight:'600',
       textAlign:'center',
       paddingTop:17
    },
    signUpText:{
-      color:'#24000B',
+      color:Colors.BellaDona,
       textAlign:'center',
       marginTop:26,
       fontSize:15,
       fontWeight:'100'
    },
    signUpTextColor:{
-      color: 'rgba(107, 24, 255, 1)'
+      color:Colors.shadowPurple,
    },
    btnBackView:{
          height: 65,
-         marginHorizontal: 14,
-         borderColor: '#A819FD',
+         marginHorizontal: 14,   
+         borderColor:Colors.lightPurple,
          borderWidth: 1,
          marginTop: 26,
          borderRadius: 27,

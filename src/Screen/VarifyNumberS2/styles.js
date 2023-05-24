@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import { Colors } from '../../Constant/color';
 
 export default StyleSheet.create({
   main: {
@@ -24,7 +25,7 @@ export default StyleSheet.create({
     marginTop: 33,
     fontSize: 22,
     fontWeight: '700',
-    color: '#FFFFFF',
+    color: Colors.White,
     marginLeft: 16,
   },
   varifyDesc: {
@@ -37,7 +38,7 @@ export default StyleSheet.create({
   numberDesc: {
     fontWeight: '400',
     fontSize: 17,
-    color: '#78CC5A',
+    color:Colors.lightGreen,
   },
   otpNo: {
     flexDirection: 'row',
@@ -48,7 +49,7 @@ export default StyleSheet.create({
     fontSize: 40,
     borderBottomWidth:1,
     fontWeight:'700',
-    borderColor:'#FFFFFF'
+    borderColor:Colors.White
   },
   otpBox: {
     flexDirection: 'row',
@@ -56,14 +57,14 @@ export default StyleSheet.create({
   },
   resendCode:{
     marginTop:13,
-    color:"#24000B",
+    color:Colors.BellaDona,
     textAlign:'right',
     marginRight:15
   },
   btnBackView: {
     height: 65,
     marginHorizontal: 16,
-    borderColor: '#FFFFFF',
+    borderColor: Colors.White,
     borderWidth: 1,
     marginTop: 33,
     borderRadius: 27,
@@ -71,12 +72,12 @@ export default StyleSheet.create({
   },
   btn: {
     height: 64,
-    backgroundColor: '#FFFFFF',
+    backgroundColor:Colors.White,
     borderBottomLeftRadius: 27,
     borderTopRightRadius: 27,
   },
   btnText: {
-    color: '#24000B',
+    color:Colors.BellaDona,
     fontSize: 17,
     fontWeight: '600',
     textAlign: 'center',

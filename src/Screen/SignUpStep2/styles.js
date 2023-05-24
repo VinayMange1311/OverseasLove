@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import { Colors } from '../../Constant/color';
 
 export default StyleSheet.create({
   main: {
@@ -10,7 +11,7 @@ export default StyleSheet.create({
     flexBasis: 'auto',
   },
   signUpHead: {
-    color: '#FFFFFF',
+    color: Colors.White,
     fontWeight: '700',
     fontSize: 22,
     marginTop: 31,
@@ -21,7 +22,7 @@ export default StyleSheet.create({
     height: 203,
     width: 203,
     alignSelf: 'center',
-    backgroundColor:'white' 
+    backgroundColor:Colors.White 
   },
   cameraIcon: {
     width: 124,
@@ -41,7 +42,7 @@ export default StyleSheet.create({
     marginVertical: 15,
   },
   userChoiceDesc: {
-    borderColor: '#FFFFFF',
+    borderColor: Colors.White,
     borderWidth: 1,
     borderRadius: 10,
     marginHorizontal: 16,
@@ -50,12 +51,12 @@ export default StyleSheet.create({
     paddingLeft: 30,
     fontWeight: '100',
     height: 57,
-    color: '#FFFFFF',
+    color: Colors.White,
   },
   dayDropDownContainer: {
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#FFFFFF',
+    borderColor:Colors.White,
     height: 57,
     width: 84,
     fontSize: 16,
@@ -65,7 +66,7 @@ export default StyleSheet.create({
   monthDropDownContainer: {
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#FFFFFF',
+    borderColor: Colors.White,
     height: 57,
     width: 108,
     fontSize: 16,
@@ -75,7 +76,7 @@ export default StyleSheet.create({
   yearDropDownContainer: {
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#FFFFFF',
+    borderColor:Colors.White,
     height: 57,
     width: 94,
     fontSize: 16,
@@ -84,7 +85,7 @@ export default StyleSheet.create({
   },
   placeholder: {
     fontSize: 17,
-    color: 'white',
+    color:Colors.White,
     paddingLeft: 15,
     fontWeight: '100',
   },
@@ -105,7 +106,7 @@ export default StyleSheet.create({
   divider: {
     flex: 1,
     height: 0.5,
-    backgroundColor: 'white',
+    backgroundColor:Colors.White,
   },
   instaIcon: {
     height: 35,
@@ -126,7 +127,7 @@ export default StyleSheet.create({
   btnBackView: {
     height: 65,
     marginHorizontal: 14,
-    borderColor: '#FFFFFF',
+    borderColor:Colors.White,
     borderWidth: 1,
     marginTop: 33,
     borderRadius: 27,
@@ -134,12 +135,12 @@ export default StyleSheet.create({
   },
   btn: {
     height: 64,
-    backgroundColor: '#FFFFFF',
+    backgroundColor:Colors.White,
     borderBottomLeftRadius: 27,
     borderTopRightRadius: 27,
   },
   btnText: {
-    color: '#24000B',
+    color: Colors.BellaDona,
     fontSize: 17,
     fontWeight: '600',
     textAlign: 'center',
@@ -148,7 +149,7 @@ export default StyleSheet.create({
   dropDownContainer: {
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#FFFFFF',
+    borderColor:Colors.White,
     height: 57,
     width: 150,
     fontSize: 16,

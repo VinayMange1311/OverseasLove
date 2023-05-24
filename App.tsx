@@ -37,25 +37,3 @@ const App = () => {
 };
 export default App;
 
-const styles = StyleSheet.create({
-  bottomHomeImg: {
-    height: 33,
-    width: 33,
-  },
-  bottomLikeImg: {
-    height: 33,
-    width: 33,
-  },
-  bottomChatImg: {
-    height: 33,
-    width: 33,
-  },
-  bottomPerson: {
-    height: 33,
-    width: 33,
-  },
-  bottomPersonOutline: {
-    height: 25,
-    width: 25,
-  },
-});

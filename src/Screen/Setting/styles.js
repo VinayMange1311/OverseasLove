@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
+import { Colors } from '../../Constant/color';
 
 export default StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor:Colors.screenBackground,
   },
   logo: {
     height: 28,
@@ -49,17 +50,17 @@ export default StyleSheet.create({
     fontWeight: '700',
     marginTop: 30,
     marginLeft: 15,
-    color: '#24000B',
+    color:Colors.BellaDona,
     fontSize: 22,
   },
   userDesc: {
     fontSize: 15,
     fontWeight: '100',
     marginLeft: 15,
-    color: '#000000',
+    color:Colors.black,
   },
   dropDownContainer: {
-    borderColor: '#24000B',
+    borderColor:Colors.BellaDona,
     borderWidth: 0.5,
     height: 57,
     marginHorizontal: 15,
@@ -70,7 +71,7 @@ export default StyleSheet.create({
   },
   placeholder: {
     fontSize: 17,
-    color: '#24000B',
+    color:Colors.BellaDona,
     paddingLeft: 16,
     fontWeight: '100',
   },
@@ -79,20 +80,20 @@ export default StyleSheet.create({
     marginHorizontal: 15,
     borderRadius: 13,
     marginTop: 20,
-    shadowColor: '#000000',
+    shadowColor:Colors.black,
     shadowOffset: {
       width: 0,
       height: 3,
     },
     shadowRadius: 9,
     shadowOpacity: 10.0,
-    color: 'black',
+    color:Colors.black,
     paddingLeft: 15,
-    backgroundColor: 'white',
+    backgroundColor:Colors.White,
   },
   hobbyDesign: {
-    backgroundColor: 'white',
-    color: '#24000B',
+    backgroundColor:Colors.White,
+    color:Colors.BellaDona,
     height: 43,
     width: 151,
     paddingHorizontal: 26,

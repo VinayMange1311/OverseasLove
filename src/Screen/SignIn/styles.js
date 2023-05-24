@@ -1,8 +1,9 @@
 import {StyleSheet} from 'react-native';
+import { Colors } from '../../Constant/color';
 
 export default StyleSheet.create({
   main: {
-    backgroundColor: 'white',
+    backgroundColor:Colors.White,
     flex: 1,
   },
   linearGradient: {
@@ -24,12 +25,12 @@ export default StyleSheet.create({
   signInText: {
     fontSize: 22,
     fontWeight: '700',
-    color: '#FFFFFF',
+    color:Colors.White,
     marginLeft: 16,
     marginTop: 33,
   },
   signInTextInput: {
-    borderColor: '#FFFFFF',
+    borderColor:Colors.White,
     borderWidth: 1,
     height:57,
     borderRadius: 10,
@@ -40,7 +41,7 @@ export default StyleSheet.create({
     fontWeight: '100',
   },
   forgotPassText: {
-    color: '#24000B',
+    color:Colors.BellaDona,
     marginTop:6,
     textAlign: 'right',
     marginRight: 15,
@@ -50,7 +51,7 @@ export default StyleSheet.create({
   btnBackView:{
     height: 65,
     marginHorizontal: 14,
-    borderColor: '#FFFFFF',
+    borderColor:Colors.White,
     borderWidth: 1,
     marginTop: 22,
     borderRadius: 27,
@@ -58,12 +59,12 @@ export default StyleSheet.create({
 },
  btn:{
   height:64,
-  backgroundColor:'#FFFFFF',
+  backgroundColor:Colors.White,
   borderBottomLeftRadius:27,
   borderTopRightRadius:27,
 },
 btnText:{
-  color:'#24000B',
+  color:Colors.BellaDona,
   fontSize:17,
   fontWeight:'600',
   textAlign:'center',
@@ -77,7 +78,7 @@ btnText:{
   divider: {
     flex: 1,
     height: 0.5,
-    backgroundColor: 'white',
+    backgroundColor:Colors.White,
   },
   dividerText: {
     textAlign: 'center',

@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import { Colors } from '../../Constant/color';
+
 export default StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor:'#F5F5F5',
+    backgroundColor:Colors.screenBackground,
     
   },
   logo:{
@@ -22,37 +23,37 @@ export default StyleSheet.create({
     marginHorizontal:17
   },
   simpleText:{
-    color:'#24000B',
+    color:Colors.BellaDona,
     fontWeight:'100',
     fontSize:17,
     marginTop:33,
     marginLeft:15
   },
   ageTitle:{
-    color:'#24000B',
+    color:Colors.BellaDona,
     fontWeight:'100',
     fontSize:17,
     marginTop:30,
   },
   dropDownContainer:{
-    borderColor:'#24000B',
+    borderColor:Colors.BellaDona,
     borderWidth:0.5,
     height:57,
     marginHorizontal:15,
     borderRadius:10,
     marginTop:30,
-    backgroundColor:'#F5F5F5',
-    color:'#24000B',
+    backgroundColor:Colors.screenBackground,
+    color:Colors.BellaDona,
   },
   placeholder: {
     fontSize: 17,
-    color: '#24000B',
+    color:Colors.BellaDona,
     paddingLeft: 16,
     fontWeight: '100',
   },
   filterText:{
     fontSize:22,
-    color:'#24000B',
+    color:Colors.BellaDona,
     fontWeight:'700',
     marginTop:30,
     marginLeft:15

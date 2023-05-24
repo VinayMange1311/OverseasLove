@@ -15,6 +15,9 @@ import Feather from 'react-native-vector-icons/Feather';
 import {useNavigation} from '@react-navigation/native';
 import TabNav from '../../Navigation/TabNavigation';
 import RangeSlider, { Slider } from 'react-native-range-slider-expo';
+import TwoThumbAgeSlider from '../../Custom/Slider/CustomSlider';
+import AgeSlider from '../../Custom/Slider/CustomSlider';
+import CustomAgeSlider from '../../Custom/Slider/CustomSlider';
 
 const Filter = () => {
   
@@ -59,19 +62,14 @@ const Filter = () => {
             flexDirection: 'row',
             justifyContent: 'space-between',
             marginHorizontal: 15,
+            
           }}>
           <Text style={styles.ageTitle}>Age</Text>
           <Text style={styles.ageTitle}>
             {minValue}-{maxValue}
           </Text>
         </View>
-        <View>
-        <RangeSlider
-        low={10}
-        max={1000}
-       />
-        </View>
-      
+        <CustomAgeSlider/>
         <Dropdown
           style={styles.dropDownContainer}
           placeholder="Location"

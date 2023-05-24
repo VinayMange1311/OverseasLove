@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
+import { Colors } from '../../Constant/color';
 
 export default StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor:'#F5F5F5'
+    backgroundColor:Colors.screenBackground,
   },
   backBtn: {
     marginLeft: 15,
@@ -16,7 +17,7 @@ export default StyleSheet.create({
     marginLeft:17,
   },
   contacts:{
-    color:'#000000',
+    color:Colors.black,
     fontWeight:'700',
     fontSize:22,
     marginTop:33,

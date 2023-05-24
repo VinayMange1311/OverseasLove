@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
+import { Colors } from '../../Constant/color';
 
 export default StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor:'#F5F5F5'
+    backgroundColor:Colors.screenBackground,
   },
   backBtn: {
     marginLeft: 15,
@@ -16,7 +17,7 @@ export default StyleSheet.create({
     marginLeft:17,
   },
   contacts:{
-    color:'#000000',
+    color:Colors.black,
     fontWeight:'700',
     fontSize:22,
     marginTop:33,
@@ -31,20 +32,20 @@ export default StyleSheet.create({
   },
   chat:{
     fontWeight:'700',
-    color:'#000000',
+    color:Colors.black,
     fontSize:22,
     marginLeft:15,marginTop:20
   },
   names:{
     fontSize:19,
     fontWeight:'700',
-    color:'#24000B',
+    color:Colors.BellaDona,
     marginTop:22
   },
   desc:{
     fontSize:17,
     fontWeight:'100',
-    color:'#000000'
+    color:Colors.black,
   },
   chatMainView:{
     flexDirection:'row',

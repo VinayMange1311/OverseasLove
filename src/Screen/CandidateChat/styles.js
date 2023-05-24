@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
+import { Colors } from '../../Constant/color';
 
 export default StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor:Colors.screenBackground,
   },
   logo: {
     width: 158,
@@ -32,7 +33,7 @@ export default StyleSheet.create({
     marginLeft: 17,
   },
   candidateName: {
-    color: 'black',
+    color:Colors.black,
     fontSize: 17,
     fontWeight: '700',
     marginLeft: 11,
@@ -46,18 +47,18 @@ export default StyleSheet.create({
     marginRight: 26,
   },
   chatInput: {
-    borderColor: 'black',
+    borderColor:Colors.black,
     marginHorizontal: 15,
     borderRadius: 13,
     marginBottom: 30,
-    backgroundColor: 'white',
-    color: 'black',
+    backgroundColor:Colors.White,
+    color:Colors.black,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
   hobbyDesign: {
-    color: 'white',
+    color:Colors.White,
     fontSize: 16,
     fontWeight: 'bold',
     paddingHorizontal:10,
@@ -77,7 +78,7 @@ export default StyleSheet.create({
   textInput: {
     width: 270,
     marginLeft: 17,
-    color: 'black',
+    color:Colors.black
   },
   smileyIcon: {
     marginRight: 16,
@@ -94,7 +95,7 @@ export default StyleSheet.create({
   youLiked: {
     marginTop: 30,
     textAlign: 'center',
-    color: '#24000B',
+    color: Colors.BellaDona,
     fontWeight: '100',
     fontSize: 17,
   },

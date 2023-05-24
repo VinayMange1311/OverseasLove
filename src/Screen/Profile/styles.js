@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
+import { Colors } from '../../Constant/color';
 
 export default StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor:Colors.screenBackground,
   },
   backBtn: {
     marginLeft: 15,
@@ -33,7 +34,7 @@ export default StyleSheet.create({
   },
   profileName: {
     fontWeight: '700',
-    color: '#24000B',
+    color:Colors.BellaDona,
     fontSize: 22,
     marginTop: 57,
     marginLeft: 15,
@@ -43,7 +44,7 @@ export default StyleSheet.create({
     height: 20,
   },
   profileDesc: {
-    color: '#000000',
+    color:Colors.black,
     fontWeight: '100',
     fontSize: 15,
     marginLeft: 8,
@@ -54,7 +55,7 @@ export default StyleSheet.create({
     marginTop: 7,
   },
   instruction:{
-    color:'#000000',
+    color:Colors.black,
     fontWeight:'100',
     fontSize:17,
     textAlign:'center',
@@ -66,13 +67,13 @@ export default StyleSheet.create({
     fontSize:19,
     textAlign:'center',
     marginTop:20,
-    color:'#000000',
+    color:Colors.black,
     marginHorizontal:21
   },
   btnBackView:{
     height: 65,
     marginHorizontal: 14,
-    borderColor: '#A819FD',
+    borderColor:Colors.lightPurple,
     borderWidth: 1,
     marginTop: 22,
     borderRadius: 27,
@@ -80,12 +81,12 @@ export default StyleSheet.create({
 },
  btn:{
   height:64,
-  backgroundColor:'#A819FD',
+  backgroundColor:Colors.lightPurple,
   borderBottomLeftRadius:27,
   borderTopRightRadius:27,
 },
 btnText:{
-  color:'#FFFFFF',
+  color:Colors.White,
   fontSize:17,
   fontWeight:'600',
   textAlign:'center',
@@ -103,7 +104,7 @@ btnText:{
   shareDesc:{
     fontWeight:'100',
     fontSize:17,
-    color:'#24000B',
+    color:Colors.BellaDona,
     marginHorizontal:22,
     width:263
   }

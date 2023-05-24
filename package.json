@@ -39,7 +39,7 @@
     "react-native-date-picker": "^4.2.13",
     "react-native-dropdown-picker": "^5.4.6",
     "react-native-element-dropdown": "^2.9.0",
-    "react-native-gesture-handler": "^2.9.0",
+    "react-native-gesture-handler": "^2.10.1",
     "react-native-image-crop-picker": "^0.39.0",
     "react-native-image-picker": "^5.3.1",
     "react-native-linear-gradient": "^2.6.2",
@@ -53,7 +53,8 @@
     "react-native-vector-icons": "^9.2.0",
     "react-phone-number-input": "^3.2.22",
     "rn-country-picker": "^1.0.1",
-    "rn-range-slider": "^2.2.2"
+    "rn-range-slider": "^2.2.2",
+    "styled-components-native": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -74,5 +75,8 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "overrides": {
+    "react-native-gesture-handler": "^2.9.0"
   }
 }

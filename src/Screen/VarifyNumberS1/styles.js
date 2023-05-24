@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import { Colors } from '../../Constant/color';
 
 export default StyleSheet.create({
   main: {
@@ -23,7 +24,7 @@ export default StyleSheet.create({
   varfyTitle: {
     marginTop: 33,
     fontSize: 22,
-    color: '#FFFFFF',
+    color: Colors.White,
     marginLeft: 16,
     fontWeight: '700',
   },
@@ -43,11 +44,11 @@ export default StyleSheet.create({
     width: 84,
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#FFFFFF',
+    borderColor:Colors.White,
     padding: 10,
   },
   textInput: {
-    borderColor: '#FFFFFF',
+    borderColor:Colors.White,
     borderWidth: 1,
     height: 57,
     borderRadius: 10,
@@ -56,7 +57,7 @@ export default StyleSheet.create({
     width: 225,
   },
   flagDropIcon: {
-    tintColor: 'white',
+    tintColor:Colors.White,
     height: 8,
     width: 14,
     marginLeft: 12,
@@ -64,7 +65,7 @@ export default StyleSheet.create({
   btnBackView: {
     height: 65,
     marginHorizontal: 16,
-    borderColor: '#FFFFFF',
+    borderColor:Colors.White,
     borderWidth: 1,
     marginTop: 33,
     borderRadius: 27,
@@ -72,12 +73,12 @@ export default StyleSheet.create({
   },
   btn: {
     height: 64,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: Colors.White,
     borderBottomLeftRadius: 27,
     borderTopRightRadius: 27,
   },
   btnText: {
-    color: '#24000B',
+    color: Colors.BellaDona,
     fontSize: 17,
     fontWeight: '600',
     textAlign: 'center',

@@ -1,36 +1,37 @@
 import {StyleSheet} from 'react-native';
+import { Colors } from '../../Constant/color';
 
 export default StyleSheet.create({
   candidateName: {
     fontWeight: '700',
     fontSize: 19,
-    color: '#24000B',
+    color: Colors.BellaDona,
     marginLeft: 15,
     marginTop: 30,
   },
   candidateOccupation: {
     fontWeight: '100',
     fontSize: 17,
-    color: '#24000B',
+    color: Colors.BellaDona,
     marginLeft: 15,
   },
   title: {
     marginTop: 30,
     fontSize: 19,
     fontWeight: '700',
-    color: '#24000B',
+    color: Colors.BellaDona,
     marginLeft: 15,
   },
   candidateAbout: {
     fontWeight: '100',
     fontSize: 17,
-    color: '#24000B',
+    color: Colors.BellaDona,
     marginHorizontal: 15,
     marginTop: 20,
   },
   hobbyDesign: {
-    backgroundColor: 'white',
-    color: '#24000B',
+    backgroundColor: Colors.background,
+    color: Colors.BellaDona,
     height: 43,
     paddingHorizontal: 26,
     paddingVertical: 9,
@@ -41,7 +42,7 @@ export default StyleSheet.create({
     fontWeight:'100'
   },
   candidateLocation:{
-    color:'#000000',
+    color:Colors.black,
     fontSize:17,
     marginTop:20,
     marginLeft:15,

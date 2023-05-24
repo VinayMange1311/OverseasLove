@@ -1,9 +1,9 @@
 import {StyleSheet} from 'react-native';
-
+import { Colors } from '../../Constant/color';
 export default StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor:'#F5F5F5',
+    backgroundColor:Colors.screenBackground,
   },
   backBtn: {
     marginLeft: 15,
@@ -47,14 +47,14 @@ export default StyleSheet.create({
   },
   name:{
     fontWeight:'700',
-    color:'#FFFFFF',
+    color:Colors.White,
     fontSize:22,
     marginLeft:19,
     marginTop:334
   },
   disatnce:{
     fontWeight:'100',
-    color:'#FFFFFF',
+    color:Colors.White,
     marginLeft:19,
     fontSize:14
   },
@@ -65,32 +65,34 @@ export default StyleSheet.create({
     marginLeft:20
   },
   btnViewContainer:{
-    flexDirection: 'row', marginTop: 337, marginRight: 23,
+    flexDirection: 'row',
+    marginTop: 337, 
+    marginRight: 23,
   },
   candidateName:{
     fontWeight:'700',
     fontSize:19,
-    color:'#24000B',
+    color:Colors.BellaDona,
     marginLeft:15,
     marginTop:30
   },
   candidateOccupation:{
     fontWeight:'100',
     fontSize:17,
-    color:'#24000B',
+    color:Colors.BellaDona,
     marginLeft:15
   },
   title:{
     marginTop:30,
     fontSize:19,
     fontWeight:'700',
-    color:'#24000B',
+    color:Colors.BellaDona,
     marginLeft:15
   },
   candidateAbout:{
     fontWeight:'100',
     fontSize:17,
-    color:'#24000B',
+    color:Colors.BellaDona,
     marginHorizontal:15,
     marginTop:20
   },

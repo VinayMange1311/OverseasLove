@@ -1,13 +1,14 @@
 import {StyleSheet} from 'react-native';
+import { Colors } from '../../Constant/color';
 
 const styles = StyleSheet.create({
     toggleBtn:{
         marginHorizontal:15,
         height:44,
-        backgroundColor: 'white',
+        backgroundColor:Colors.White,
         borderRadius:11,
         borderWidth: 0.8,
-        borderColor:'#24000B',
+        borderColor:Colors.BellaDona,
         flexDirection: 'row',
         justifyContent: 'center',
         marginTop:20,
